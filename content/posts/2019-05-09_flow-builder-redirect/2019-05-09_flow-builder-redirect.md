@@ -78,4 +78,4 @@ As you can see, I stopped using the "recordId" and replaced it with "url" (also 
 * If you want your flow to be redirected to https://www.salesforce.com, just provide that same value: "https://www.salesforce.com".
 * If, after the flow finishes, you want it to be redirected to the created record, you can provide: "/{!contractId}", where {!contractId} is a variable inside your flow
 
-![local-action-navigatetourl](/local-action-navigatetourl.png)
+![local-action-navigatetourl](/posts/2019-05-09_flow-builder-redirect/local-action-navigatetourl.png)
