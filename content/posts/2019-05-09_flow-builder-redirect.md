@@ -8,6 +8,7 @@ tags = ["salesforce", "flow"]
 keywords = ["salesforce", "flow"]
 description = ""
 summary="I'm not using Flow Builder (aka Visual Flow) very often, but when I do... I'm baffled, positively ánd (unfortunately) also negatively 🙄 #diamondintherough"
+slug="flow-builder-redirect"
 +++
 
 <!-- ## Flow Builder Redirect after Interview Completion -->
