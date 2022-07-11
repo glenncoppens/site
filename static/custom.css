@@ -1,0 +1,51 @@
+:root {
+    --default-tint: #aaa;
+}
+
+h1, h2, h3, h4,
+p, span, label,
+ul, ol {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0.8rem;
+}
+h2 {
+    margin-top: 2.8rem;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+h4 {
+    margin-top: 1.6rem;
+}
+
+p, ul, ol {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* font-weight: 400; */
+    /* font-size-adjust: none;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-variant-alternates: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-language-override: normal;
+    font-feature-settings: normal;
+    font-variation-settings: normal; */
+}
+
+.catalogue-summary {
+    color: var(--default-tint);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.post-info {
+    font-family: "Georgia", serif
+}

@@ -1,27 +1,21 @@
 baseurl = "/"
 languageCode = "en-us"
-theme = "terminal"
-paginate = 5
+theme = "tale"
+paginate = 10
+
+[author]
+name = "Glenn Coppens"
+
+[permalinks]
+  posts = '/:year/:month/:title/'
+
+[Params]
+css = ["custom.css", "tags.css"]
 
 [params]
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
-
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "orange"
-
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
-
-  # show selector to switch language
-  showLanguageSelector = false
-
-  # set theme to full screen width
-  fullWidthTheme = false
-
-  # center theme with default width
-  centerTheme = false
 
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
@@ -46,11 +40,11 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
+    title = "gc"
+    subtitle = "glenncoppens.be"
     owner = ""
-    keywords = ""
-    copyright = ""
+    keywords = ["salesforce"]
+    copyright = "glenncoppens.be"
     menuMore = "Show more"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
@@ -58,15 +52,39 @@ paginate = 5
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
+      logoText = "GC"
       logoHomeLink = "/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "posts"
+        name = "posts"
+        title = "posts"
+        url = "/posts"
+        weight = 0
+      # [[languages.en.menu.main]]
+      #   identifier = "about"
+      #   name = "About"
+      #   title = "About"
+      #   url = "/about"
+      #   weight = 0
+
+
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    # lineNumbersInTable = true
+    noClasses = false
+    # noHl = true
+    # style = 'monokai'
+    tabWidth = 2
+
+      

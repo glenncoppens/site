@@ -1,0 +1,6 @@
+{{ $factor := 1.4 }}
+{{ $readTime := mul (mul (div (countwords .Content) 220.0) 60) $factor }}
+{{ $minutes := math.Floor (div $readTime 60) }}
+{{ $seconds := mod $readTime 60 }}
+
+{{ $minutes }} {{ cond (eq $minutes 1) "min" "mins" }}

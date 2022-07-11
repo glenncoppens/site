@@ -1,0 +1,68 @@
+{{ define "main" }}
+<main>
+
+    <div class="tags">
+        <div class="tags-header">
+          <h2 class="tags-header-title">{{ .Title }}</h2>
+          <div class="tags-header-line"></div>
+        </div>
+        <div class="tags-clouds">
+            {{ range sort .Site.Taxonomies.tags }}
+                <a href="{{ .Page.Permalink }}"><i class="fas fa-tags"></i> {{ .Page.Title }} ({{ .Count }})</a>
+            {{ end }}
+        </div>
+
+        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+        
+            {{/*  <li>
+                <a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
+                <ul>  */}}
+                    {{ range $key, $value := $taxonomy }}
+                    <div class="tags-item">
+                        <svg class="tags-item-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                        </svg>
+                        <h2 class="tags-item-label">{{ $key }}</h2>
+                        {{ range $value.Pages }}
+                        <a class="tags-post" href="{{ .Permalink}}">
+                            <div>
+                                <span class="tags-post-title">{{ .LinkTitle }}</span>
+                                <div class="tags-post-line"></div>
+                            </div>
+                            <span class="tags-post-meta">
+                                <time datetime="{{ .PublishDate }}">{{ .PublishDate | time.Format ":date_medium" }}</time>
+                            </span>
+                        </a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                {{/*  </ul>
+            </li>  */}}
+        {{ end }}
+        
+      </div>
+
+
+    {{/*  <h1>{{ .Title }}</h1>
+	<div class="catalogue">
+        <ul>
+        {{- range (.Paginate .Data.Pages).Pages -}}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{- end -}}
+        </ul>
+	</div>
+	
+	<div class="pagination">
+		{{- if .Paginator.HasPrev -}}
+			<a href="{{ .Paginator.Prev.URL }}" class="left arrow">&#8592;</a>
+		{{- end -}}
+		{{- if .Paginator.HasNext -}}
+			<a href="{{ .Paginator.Next.URL }}" class="right arrow">&#8594;</a>
+		{{- end -}}
+	
+		<span>{{ .Paginator.PageNumber }}</span>
+	</div>  */}}
+</main>
+
+{{ end }}
