@@ -7,19 +7,12 @@ p, span, label,
 ul, ol {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
-h1,h2,h3,h4,h5,h6 {
-    margin-bottom: 0.8rem;
-}
-h2 {
-    margin-top: 2.8rem;
-}
+h1,h2,h3,h4,h5,h6 { margin-bottom: 0.8rem; }
+h2 { margin-top: 2.8rem; }
+h3 { margin-top: 2rem; }
+h4 { margin-top: 1.6rem; }
 
-h3 {
-    margin-top: 2rem;
-}
-h4 {
-    margin-top: 1.6rem;
-}
+a { word-wrap: break-word; }
 
 p, ul, ol {
     font-style: normal;
