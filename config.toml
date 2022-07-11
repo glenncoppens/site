@@ -8,10 +8,10 @@ paginate = 10
 name = "Glenn Coppens"
 
 [permalinks]
-  posts = '/:year/:month/:title/'
+posts = '/:year/:month/:title'
 
 [Params]
-css = ["custom.css", "tags.css"]
+css = ["css/custom.css", "css/tags.css"]
 
 [params]
   # dir name of your main content (default is `content/posts`).
@@ -41,10 +41,10 @@ css = ["custom.css", "tags.css"]
 [languages]
   [languages.en]
     languageName = "English"
-    title = "gc"
+    title = "glc"
     subtitle = "glenncoppens.be"
     owner = ""
-    keywords = ["salesforce"]
+    keywords = "architecture,humor,human,pragmatic,salesforce,lightning,apex,software,engineer,engineering,php,laravel,javascript,typescript,vue,vuejs,composition"
     copyright = "glenncoppens.be"
     menuMore = "Show more"
     readMore = "Read more"
@@ -53,7 +53,7 @@ css = ["custom.css", "tags.css"]
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "GC"
+      logoText = "glc"
       logoHomeLink = "/"
 
     [languages.en.menu]
@@ -75,8 +75,6 @@ css = ["custom.css", "tags.css"]
       #   title = "About"
       #   url = "/about"
       #   weight = 0
-
-
 
 [markup]
   [markup.highlight]
