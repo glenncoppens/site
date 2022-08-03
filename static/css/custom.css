@@ -39,6 +39,11 @@ p, ul, ol {
     line-height: 26px;
 }
 
+.catalogue-item {
+    border-bottom: none;
+    padding: 1.1rem 0 1.1rem 0;
+}
+
 .post-info {
     font-family: "Georgia", serif
 }
