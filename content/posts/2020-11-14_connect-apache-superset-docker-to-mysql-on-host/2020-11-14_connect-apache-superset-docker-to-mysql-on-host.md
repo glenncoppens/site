@@ -5,8 +5,7 @@ cover = ""
 tags = ["python", "apache","superset", "analytics","data"]
 keywords = ["python", "apache","superset", "analytics","data"]
 description = ""
-summary="👉 Starting out with Apache Superset? ♾
-⚠️ These are the things I came accross, scratching my head for a while"
+summary="👉 Starting out with Apache Superset? ♾ ⚠️ These are the things I came accross, scratching my head for a while"
 slug="connect-apache-superset-to-mysql-on-host"
 +++
 

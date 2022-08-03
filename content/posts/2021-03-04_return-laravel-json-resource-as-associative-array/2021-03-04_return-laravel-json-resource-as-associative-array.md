@@ -5,8 +5,7 @@ cover = ""
 tags = ["php", "laravel","architecture","api"]
 keywords = ["php", "laravel","architecture","api"]
 description = ""
-summary="I recently ran into the same issue as mentioned in this stackoverflow thread: https://stackoverflow.com/questions/52613298/return-array-in-laravel-api-resource-without-reordering-keys
-If you have custom data structures and you want to use JsonResource's for constency sake,…"
+summary="I recently ran into the same issue as mentioned in this stackoverflow thread: https://stackoverflow.com/questions/52613298/return-array-in-laravel-api-resource-without-reordering-keys If you have custom data structures and you want to use JsonResource's for constency sake,…"
 slug="return-laravel-json-resource-as-associative-array"
 +++
 
